@@ -46,6 +46,7 @@ class ConnectionFactory{
 	
 }
 
+
 //根据传入的值来生成不同的对象，并使用各自的方法
 $Connection = ConnectionFactory::GetConnection('Oracle');
 $Connection->Connection();
