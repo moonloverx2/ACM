@@ -9,7 +9,7 @@ abstract class Decorator extends Component{
 	protected $Component;
 	function __construct(Component $Component){
 		$this->Component = $Component;
-	}	
+	}
 	public function Operation()
 	{
 		$this->Component->Operation();
@@ -29,12 +29,12 @@ class ConcreteDecoratorOne extends Decorator{
 	public function __construct(Component $Component)
 	{
 		parent::__construct($Component);
-	}	
+	}
 	public function Operation()
 	{
 		parent::Operation();
 		$this->AddOperationOne();
-	}	
+	}
 	public function AddOperationOne()
 	{
 		echo ' Add the first Operation. ';
@@ -44,12 +44,12 @@ class ConcreteDecoratorTwo extends Decorator{
 	public function __construct(Component $Component)
 	{
 		parent::__construct($Component);
-	}	
+	}
 	public function Operation()
 	{
 		parent::Operation();
 		$this->AddOperationTwo();
-	}	
+	}
 	public function AddOperationTwo()
 	{
 		echo ' Add the second Operation. ';
